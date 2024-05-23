@@ -34,4 +34,4 @@ collections:
           name: "hero_image_credit_link",
           widget: "string",
         }
-      - { label: "Body", name: "body", widget: "" }
+      - { label: "Body", name: "body", widget: "markdown" }
