@@ -6,7 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const BlogPost = ({ data, children }) => {
   const image = getImage(data.mdx.frontmatter.hero_image);
-
+  // console.log(image);
   return (
     <Layout pageTitle="Super Cool Blog Posts">
       <p>{data.mdx.frontmatter.date}</p>

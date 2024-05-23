@@ -14,13 +14,15 @@ collections:
     media_folder: ""
     public_folder: ""
     path: "{{title}}/index"
+    extension: mdx
+    format: frontmatter
     editor:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Slug", name: "slug", widget: "string" }
-      - { label: "Hero Image", name: "hero_image", widget: "string" }
+      - { label: "Hero Image", name: "hero_image", widget: "image" }
       - { label: "Hero Image Alt", name: "hero_image_alt", widget: "string" }
       - {
           label: "Hero Credit Text",
@@ -32,4 +34,4 @@ collections:
           name: "hero_image_credit_link",
           widget: "string",
         }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "" }
